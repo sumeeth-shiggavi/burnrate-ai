@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/create-next-app).
+# BurnRate AI 📊
 
-## Getting Started
+BurnRate AI is a high-performance, full-stack Multi-Tenant SaaS platform designed to audit startup AI tooling spend. It eliminates capital waste by evaluating active software seating allocations against deterministic, live-vendor pricing models rather than unreliable AI guesswork.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Live Core Features
+* **Multi-Step Dynamic Wizard:** State-managed form sequence utilizing type-safe URL search parameters for reliable backward/forward navigation without losing input history.
+* **Deterministic Calculation Engine:** Pure, zero-hallucination mathematical logic models parsing real infrastructure parameters against actual SaaS pricing structures.
+* **Serverless Data Pipeline:** Server-side ingestion layer utilizing structural schema guards to cleanly validate and persist audited entries directly into a cloud database.
+* **Analytics Results Dashboard:** Dynamic server-rendered analytics view displaying optimization metrics, structural financial leaks, and custom capital reclamation roadmaps.
+* **Administrative Operations Console:** High-level admin environment aggregating cross-platform metrics, managed runway pools, and total system capital savings.
+
+---
+
+## 🛠️ Tech Stack & Architecture
+* **Framework:** Next.js 15 (App Router, Server Components)
+* **Language:** TypeScript (Strictly typed compilation)
+* **Database:** Supabase Cloud Infrastructure (PostgreSQL with Row-Level Security)
+* **Validation Layer:** Zod Data Invalidation Guards
+* **Styling & UI:** Tailwind CSS & Radix UI Component Primitives
+
+---
+
+## 📦 Local Installation & Setup
+
+1. **Clone the Repository:**
+   ```bash
+   git clone [https://github.com/sumeeth-shiggavi/burnrate-ai.git](https://github.com/sumeeth-shiggavi/burnrate-ai.git)
+   cd burnrate-ai
+Install Dependencies:
+
+Bash
+npm install --legacy-peer-deps
+Configure Environment Variables (.env.local):
+
+Code snippet
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+Boot Development Server:
+
+Bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 inside your browser environment to test the full loop.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Compile Production Assets:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Bash
+npm run build
